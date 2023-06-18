@@ -92,7 +92,7 @@ const TreeView = () => {
     <div className="border-l border-l-gray-500 pl-5">
       {root.childrens?.map((file) => {
         return (
-          <div className="flex flex-row">
+          <div key={file.title} className="flex flex-row">
             <TreeFolder key={file.title} folder={file} />
           </div>
         );
